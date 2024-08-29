@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+{% block title %}Task list{% endblock  %}
+{% block content %}
+
+<div class='form-control bg-secondary w-75 m-auto'>
+<h1>Task list</h1>
+
+<ul>
+    {% for task in tasks %}
+ 
+    <li>
+        <a href='{% url 'task_details' task.pk %}'>{{ task.title }}</a>:  {{ task.description }} : 
+    </li><small><button type='button'><a href='{% url 'delete_task' task.pk %}'>delete</a></button></small>
+    {% endfor %}
+
+    
+</ul>
+
+<button type="button"><a href='/app/task/?complete=true'>Completed task</a></button>
+
+<button type="button"><a href='/app/task/?complete=false'>incompleted task</a></button>
+
+<button type="button"><a href='/app/task/'>All task</a></button>
+<button type="button"><a href='/app/task/form/'>Add task</a></button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

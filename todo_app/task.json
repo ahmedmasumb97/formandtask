@@ -1,0 +1,42 @@
+[
+    {
+        "model": "todo_app.task",
+        "pk": 1,
+        "fields": {
+            "title": "Buy milk",
+            "description": "Milk is good for health for everyone.",
+            "completed": false,
+            "created_at": "2024-08-02"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk": 2,
+        "fields": {
+            "title": "Buy vegetables and go for a walk",
+            "description": "Vegetables are good for health, and walking is good exercise.",
+            "completed": false,
+            "created_at": "2024-08-30"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk": 3,
+        "fields": {
+            "title": "Swimming is a good exercise",
+            "description": "Swimming is beneficial for health, and it is a good exercise.",
+            "completed": false,
+            "created_at": "2024-08-30"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk": 4,
+        "fields": {
+            "title": "Buy fruits",
+            "description": "Fruits are healthy and make you strong.",
+            "completed": true,
+            "created_at": "2024-09-30"
+        }
+    }
+]
